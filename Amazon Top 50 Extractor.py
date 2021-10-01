@@ -68,7 +68,6 @@ for department_name in department_names:
 
                 i = product[2].replace(",","")
                 j = i.isdigit()
-                k = i.isalpha()
                 
                 if j:
                     ratings1 = driver.find_element_by_xpath('//li[' + pNum2 + ' ]//span[1]//div[1]//span[1]//div[1]//a[1]//i[1]')
@@ -95,7 +94,6 @@ for department_name in department_names:
                 pNum2 = pNum1.split('#')[1]
                 l = product[3].replace(",","")
                 m = l.isdigit()
-                n = l.isalpha()
 
                 if m:
                     ratings1 = driver.find_element_by_xpath('//li[' + pNum2 + ']//span[1]//div[1]//span[1]//div[2]//a[1]//i[1]')
@@ -121,7 +119,6 @@ for department_name in department_names:
                 pNum2 = pNum1.split('#')[1]
                 p = product[3].replace(",","")
                 q = p.isdigit()
-                r = p.isalpha()
                 
                 if q:
                     ratings1 = driver.find_element_by_xpath('//li[' + pNum2 + ']//span[1]//div[1]//span[1]//div[2]//a[1]//i[1]')
